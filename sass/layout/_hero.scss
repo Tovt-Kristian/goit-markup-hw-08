@@ -1,23 +1,84 @@
 .hero {
-  max-width: 1600px;
-  margin: 0 auto;
-  background-color: var(--bg-main-color);
+  max-width: 767px;
+  background-color: rgba(47, 48, 58, 0.4);
   background-image: linear-gradient(
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url(../images/hero/Bg_mobile-img.jpg);
+    url("../images/hero/Bg_mobile-img.jpg");
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-
-  &__container {
-    text-align: center;
-    padding: 200px 0;
-  }
+  margin: 0 auto;
 
   &__btn {
     min-width: 136px;
     padding: 10px 32px;
     margin-top: 30px;
+  }
+}
+@media (min-device-pixel-ratio: 2),
+  (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url("../images/hero/Bg_mobile-img@2x.jpg");
+  }
+}
+.hero__container {
+  text-align: center;
+  padding: 118px 0;
+}
+
+@media screen and (min-width: 768px) {
+  .hero {
+    max-width: 1199px;
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url("../images/hero/Bg_tablet-img.jpg");
+  }
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero {
+      background-image: linear-gradient(
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url("../images/hero/Bg_tablet-img@2x.jpg");
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero {
+    max-width: 1600px;
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url("../images/hero/Bg_desktop-img.jpg");
+  }
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero {
+      background-image: linear-gradient(
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url("../images/hero/Bg_desktop-img@2x.jpg");
+    }
+  }
+  .hero__container {
+    padding: 200px 0;
   }
 }
