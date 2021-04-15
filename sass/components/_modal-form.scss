@@ -90,7 +90,7 @@
       margin-right: 8.38px;
 
       .modal-form__term:checked + & {
-        background-image: url("../images/icon-vector.svg");
+        background-image: url(../images/icon-vector.svg);
         background-color: var(--accent-color);
         background-position: center;
         border: 0.2px solid var(--secondary-color);
