@@ -526,6 +526,7 @@ img {
 }
 
 .is-open {
+  z-index: 1;
   opacity: 1;
   visibility: visible;
   pointer-events: auto;
