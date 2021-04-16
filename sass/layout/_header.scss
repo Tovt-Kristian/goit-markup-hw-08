@@ -86,7 +86,7 @@
   }
 
   &__link {
-    @include font(400, 40px, 47px, 0.02em);
+    @include font(500, 40px, 47px, 0.02em);
     color: var(--main-color);
   }
   &__link:hover,
