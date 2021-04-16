@@ -10,8 +10,12 @@
   --bg-accent-color: #f5f4fa;
   --bg-button-color: #188ce8;
   --icon-color: #afb1b8;
-  --section-pt: 94px;
-  --section-pb: 94px;
+  --section-pt-mobile: 60px;
+  --section-pb-mobile: 60px;
+  --section-pt-tablet: 60px;
+  --section-pb-tablet: 60px;
+  --section-pt-desktop: 94px;
+  --section-pb-desktop: 94px;
   --pt: 15px;
   --pb: 15px;
 }

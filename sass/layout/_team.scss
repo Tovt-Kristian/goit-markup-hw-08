@@ -1,0 +1,68 @@
+.team {
+  padding-top: var(--section-pt-mobile);
+  padding-bottom: var(--section-pb-mobile);
+  background-color: var(--bg-accent-color);
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: -30px;
+  }
+  &__item {
+    margin-top: 30px;
+  }
+  &__box {
+    padding: 30px 122px 24px 122px;
+    background-color: var(--secondary-color);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+  }
+  &__title {
+    @include font(500, 16px, 19px, 0.03em);
+    text-align: center;
+    color: var(--main-color);
+    margin-bottom: 10px;
+  }
+  &__description {
+    @include font(400, 16px, 19px, 0.03em);
+    text-align: center;
+    margin-bottom: 16px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .team {
+    padding-top: var(--section-pt-tablet);
+    padding-bottom: var(--section-pb-tablet);
+    &__list {
+      margin-left: -30px;
+    }
+
+    &__item {
+      flex-basis: calc(100% / 2 - 30px);
+      margin-left: 30px;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .team {
+    &__box {
+      padding: 30px 74px 24px 74px;
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .team {
+    padding-top: var(--section-pt-desktop);
+    padding-bottom: var(--section-pb-desktop);
+
+    &__item {
+      flex-basis: calc(100% / 4 - 30px);
+    }
+    &__box {
+      padding: 30px 32px;
+    }
+  }
+}

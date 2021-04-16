@@ -10,8 +10,12 @@
   --bg-accent-color: #f5f4fa;
   --bg-button-color: #188ce8;
   --icon-color: #afb1b8;
-  --section-pt: 94px;
-  --section-pb: 94px;
+  --section-pt-mobile: 60px;
+  --section-pb-mobile: 60px;
+  --section-pt-tablet: 60px;
+  --section-pb-tablet: 60px;
+  --section-pt-desktop: 94px;
+  --section-pb-desktop: 94px;
   --pt: 15px;
   --pb: 15px;
 }
@@ -395,12 +399,69 @@ img {
 
 .subtitle {
   font-weight: 700;
-  font-size: 36px;
-  line-height: 1.16;
-  text-align: center;
+  font-size: 28px;
+  line-height: 1.18;
   letter-spacing: 0.03em;
+  text-align: center;
   color: var(--main-color);
-  margin-bottom: 50px;
+  margin-bottom: 30px;
+}
+
+@media screen and (min-width: 1200px) {
+  .subtitle {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    margin-bottom: 50px;
+  }
+}
+
+.social-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.social-list__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.social-list__link:hover, .social-list__link:focus {
+  background-color: var(--accent-color);
+}
+
+.social-list__icon {
+  width: 20px;
+  height: 20px;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.social-list__link:hover .social-list__icon,
+.social-list__link:focus .social-list__icon {
+  fill: var(--secondary-color);
+}
+
+.social-list__icon_theme_light {
+  fill: var(--icon-color);
+}
+
+.social-list__icon_theme_dark {
+  fill: var(--secondary-color);
+}
+
+.social-list__item_theme_dark:not(:last-child) {
+  margin-right: 10px;
+}
+
+.social-list__link_theme_dark {
+  background-color: rgba(255, 255, 255, 0.1);
 }
 
 .header {
@@ -735,8 +796,8 @@ img {
 }
 
 .about {
-  padding-top: 60px;
-  padding-bottom: 60px;
+  padding-top: var(--section-pt-mobile);
+  padding-bottom: var(--section-pb-mobile);
 }
 
 .about__container {
@@ -785,6 +846,10 @@ img {
 }
 
 @media screen and (min-width: 768px) {
+  .about {
+    padding-top: var(--section-pt-tablet);
+    padding-bottom: var(--section-pb-tablet);
+  }
   .about__list {
     margin-left: -30px;
     margin-top: -30px;
@@ -803,6 +868,10 @@ img {
 }
 
 @media screen and (min-width: 1200px) {
+  .about {
+    padding-top: var(--section-pt-desktop);
+    padding-bottom: var(--section-pb-desktop);
+  }
   .about__list {
     margin-left: -30px;
     margin-top: -30px;
@@ -814,6 +883,81 @@ img {
   }
   .about__box {
     max-width: 270px;
+  }
+}
+
+.team {
+  padding-top: var(--section-pt-mobile);
+  padding-bottom: var(--section-pb-mobile);
+  background-color: var(--bg-accent-color);
+}
+
+.team__list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: -30px;
+}
+
+.team__item {
+  margin-top: 30px;
+}
+
+.team__box {
+  padding: 30px 122px 24px 122px;
+  background-color: var(--secondary-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.team__title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  text-align: center;
+  color: var(--main-color);
+  margin-bottom: 10px;
+}
+
+.team__description {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+@media screen and (min-width: 768px) {
+  .team {
+    padding-top: var(--section-pt-tablet);
+    padding-bottom: var(--section-pb-tablet);
+  }
+  .team__list {
+    margin-left: -30px;
+  }
+  .team__item {
+    flex-basis: calc(100% / 2 - 30px);
+    margin-left: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .team__box {
+    padding: 30px 74px 24px 74px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .team {
+    padding-top: var(--section-pt-desktop);
+    padding-bottom: var(--section-pb-desktop);
+  }
+  .team__item {
+    flex-basis: calc(100% / 4 - 30px);
+  }
+  .team__box {
+    padding: 30px 32px;
   }
 }
 /*# sourceMappingURL=main.css.map */
