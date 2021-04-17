@@ -4,11 +4,10 @@
   color: var(--main-color);
   margin-bottom: 30px;
 }
-/**
+
 @media screen and (min-width: 1200px) {
   .subtitle {
     @include font(700, 36px, 42px, 0.03em);
     margin-bottom: 50px;
   }
 }
-**/

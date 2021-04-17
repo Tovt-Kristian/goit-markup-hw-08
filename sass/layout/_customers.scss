@@ -40,3 +40,21 @@
     }
   }
 }
+
+@media screen and (min-width: 768px) {
+  .customers {
+    &__item {
+      flex-basis: calc(100% / 3 - 30px);
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .customers {
+    padding-top: var(--section-pt-desktop);
+    padding-bottom: var(--section-pb-desktop);
+    &__item {
+      flex-basis: calc(100% / 6 - 30px);
+    }
+  }
+}

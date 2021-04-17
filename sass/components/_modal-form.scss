@@ -76,7 +76,7 @@
   &__check_description {
     display: flex;
     align-items: center;
-    @include font(400, 12px, 14px, 0.03em);
+    @include font(400, 12px, 14px, 0.01em);
     color: var(--text-color);
 
     &::before {
@@ -127,7 +127,7 @@
     }
   }
 }
-/**
+
 @media screen and (min-width: 1200px) {
   .modal-form {
     &__title {
@@ -138,4 +138,3 @@
     }
   }
 }
-**/
