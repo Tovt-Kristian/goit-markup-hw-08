@@ -3,14 +3,14 @@
   flex-direction: column;
 
   &__title {
-    @include font(700, 20px, 30px, 0.03em);
+    @include font(700, 15px, 25px, 0.02em);
     text-align: center;
     color: var(--main-color);
     margin-bottom: 12px;
   }
 
   &__field {
-    @include font(400, 12px, 14px, 0.01em);
+    @include font(400, 8px, 10px, 0.01em);
     color: var(--text-color);
   }
 
@@ -76,7 +76,7 @@
   &__check_description {
     display: flex;
     align-items: center;
-    @include font(400, 12px, 14px, 0.01em);
+    @include font(400, 9px, 12px, 0.01em);
     color: var(--text-color);
 
     &::before {
@@ -107,9 +107,9 @@
   }
 
   &__btn {
-    min-width: 200px;
-    padding: 10px 55px 10px 56px;
-    @include font(700, 16px, 30px, 0.06em);
+    min-width: 160px;
+    padding: 8px 45px 8px 46px;
+    @include font(700, 12px, 26px, 0.04em);
     align-self: center;
     text-align: center;
 
@@ -124,6 +124,21 @@
     &:hover,
     &:focus {
       background-color: var(--bg-button-color);
+    }
+  }
+}
+@media screen and (min-width: 480px) {
+  .modal-form {
+    &__btn {
+      min-width: 200px;
+      padding: 10px 55px 10px 56px;
+      @include font(700, 16px, 30px, 0.06em);
+    }
+    &__title {
+      @include font(700, 20px, 30px, 0.03em);
+    }
+    &__check_description {
+      @include font(400, 12px, 14px, 0.02em);
     }
   }
 }

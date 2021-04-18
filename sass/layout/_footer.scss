@@ -141,6 +141,9 @@
       margin-right: 70px;
       margin-bottom: 0;
     }
+    &__social-title {
+      text-align: left;
+    }
   }
   .address {
     &_item {
@@ -149,6 +152,7 @@
       }
     }
   }
+
   .footer-form {
     width: 570px;
     margin-left: 93px;

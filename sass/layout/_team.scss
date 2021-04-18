@@ -2,7 +2,7 @@
   padding-top: var(--section-pt-mobile);
   padding-bottom: var(--section-pb-mobile);
   background-color: var(--bg-accent-color);
-  max-width: 480px;
+  max-width: 767px;
   margin: 0 auto;
 
   &__list {
@@ -43,7 +43,7 @@
 
 @media screen and (min-width: 768px) {
   .team {
-    max-width: 768px;
+    max-width: 1199px;
     padding-top: var(--section-pt-tablet);
     padding-bottom: var(--section-pb-tablet);
 
@@ -62,7 +62,7 @@
 
 @media screen and (min-width: 1200px) {
   .team {
-    max-width: 1200px;
+    max-width: 1600px;
     padding-top: var(--section-pt-desktop);
     padding-bottom: var(--section-pb-desktop);
 

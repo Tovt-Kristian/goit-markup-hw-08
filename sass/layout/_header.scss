@@ -44,8 +44,8 @@
   top: 0;
   left: 50%;
   width: 100vw;
-  max-width: 480px;
   height: 100vh;
+  max-width: 480px;
   padding: 48px 40px;
   background: var(--secondary-color);
   transform: translateY(-100%) translateX(-50%);
@@ -88,7 +88,7 @@
   }
 
   &__link {
-    @include font(500, 40px, 47px, 0.02em);
+    @include font(500, 28px, 35px, 0.02em);
     color: var(--main-color);
   }
   &__link:hover,
@@ -105,11 +105,11 @@
     margin-bottom: 32px;
   }
   &__tel_link {
-    @include font(500, 34px, 40px, 0.02em);
+    @include font(500, 22px, 28px, 0.02em);
     color: var(--accent-color);
   }
   &__mail_link {
-    @include font(500, 24px, 28px, 0.02em);
+    @include font(500, 16px, 20px, 0.02em);
     color: var(--text-color);
   }
 }
@@ -135,8 +135,33 @@
     margin-left: 10px;
   }
   &__link {
-    @include font(500, 18px, 22px, 0.02em);
+    @include font(500, 10px, 14px, 0.02em);
     color: var(--accent-color);
+  }
+}
+.active-link {
+  color: var(--accent-color);
+}
+
+@media screen and (min-width: 480px) {
+  .mobile-navigation-list {
+    &__link {
+      @include font(500, 40px, 47px, 0.02em);
+    }
+  }
+  .mobile-contact-list {
+    &__tel_link {
+      @include font(500, 34px, 40px, 0.02em);
+    }
+    &__mail_link {
+      @include font(500, 24px, 28px, 0.02em);
+    }
+  }
+
+  .mobile-social-list {
+    &__link {
+      @include font(500, 18px, 22px, 0.02em);
+    }
   }
 }
 
